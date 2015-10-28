@@ -19,5 +19,3 @@ render :json => t.response
 end
 
 end
-
-value: ""
