@@ -14,8 +14,10 @@ responsejson = JSON.parse(response)
 pm25count = responsejson['current_value']
 
 t = Tropo::Generator.new
-t.say(:value => "The current PM 2 point 5 count is" + pm25count + "particles per cubic foot")
+t.say(:value => "The current PM 2 point 5 count is" + pm25count + "particles per cubic foot", :voice => "allison")
 render :json => t.response
 end
 
 end
+
+value: ""
